@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import s from '../../src/styles/mainBlock.module.css'
 
 interface Address {
     address: string;
@@ -41,7 +42,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ addresses }) => {
 
     return (
         <YMaps query={{ apikey: 'bcab05a6-54b1-440f-ad20-ab56a61617e8' }}>
-            <div>
+            <div className={s.map}>
                 <Map defaultState={{ center: [55.751574, 37.573856], zoom: 9 }} style={{ width: '100%', height: '400px' }}>
                     {placemarks.map((placemark, index) => (
                         <Placemark key={index} geometry={placemark.coordinates} properties={{ balloonContent: placemark.label }} />

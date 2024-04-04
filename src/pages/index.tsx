@@ -9,10 +9,12 @@ export default function Home() {
     <>
       <HeadMeta />
       <main className={s.main}>
-          <header>
-              logo + login
-          </header>
-        <MainInfo />
+          <div className={s.container}>
+              <header>
+                  logo + login
+              </header>
+              <MainInfo/>
+          </div>
       </main>
     </>
   );

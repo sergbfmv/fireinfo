@@ -1,15 +1,20 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
     max-width: 1200px;
+    width: 100%;
+    padding-bottom: 10px;
+    overflow: hidden;
     margin: 0 auto;
 }
 
-.staticInfo {
-    width: 700px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
 
+.table {
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
 }
