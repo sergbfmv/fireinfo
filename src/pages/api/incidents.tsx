@@ -3,7 +3,7 @@ import type {NextApiRequest, NextApiResponse} from "next";
 import {incidents} from "@component/pages/api/data/incidents";
 
 export type incidentType = {
-    id: number
+    id: string
     address: string
     fireRank: string
     deceased: number
